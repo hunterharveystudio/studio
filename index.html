@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hunter Harvey</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #fafafa;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            align-items: center;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .contact {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            align-items: center;
+        }
+
+        .email {
+            font-size: 14px;
+            color: #999;
+            text-transform: lowercase;
+            text-decoration: none;
+            transition: opacity 0.2s;
+        }
+
+        .email:hover {
+            opacity: 0.6;
+        }
+
+        .instagram {
+            width: 24px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .instagram a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+        }
+
+        .instagram svg {
+            width: 20px;
+            height: 20px;
+            stroke: #000;
+            stroke-width: 1.5;
+            fill: none;
+            transition: opacity 0.2s;
+        }
+
+        .instagram a:hover svg {
+            opacity: 0.6;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                gap: 30px;
+            }
+
+            .contact {
+                gap: 16px;
+                font-size: 13px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="work.html" style="text-decoration: none; width: 100%; max-width: 800px;">
+            <img src="work.jpg" alt="This Used To Be A Gay Bar" style="cursor: pointer;">
+        </a>
+        
+        <div class="contact">
+            <a href="mailto:hunterharveystudio@gmail.com" class="email">hunterharveystudio@gmail.com</a>
+            <div class="instagram">
+                <a href="https://instagram.com/_hunter" target="_blank">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                        <path d="M12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10"/>
+                        <circle cx="17.5" cy="6.5" r="1.5"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
